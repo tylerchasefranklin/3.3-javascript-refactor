@@ -190,7 +190,9 @@ console.log(spanishColor('rojo'));
 var foo = "bar";
 
 // Put your answer below -------------------------
+var foo;
 
+foo = "bar";
 
 // -----------------------------------------------
 
