@@ -56,11 +56,11 @@ var doSomethingCool = function(){
 // after 2 seconds. Refactor to use an anonymous
 // function
 
-(function sayHi() {
-  alert("Hello, World!");
+//(function sayHi() {
+  //alert("Hello, World!");
 
-setTimeout(sayHi, 2000);
-}());
+//setTimeout(sayHi, 2000);
+//}());
 
 // Put your answer below -------------------------
 
@@ -117,8 +117,15 @@ var reverseStr = function(str) {
   return str;
 };
 
+
+
 // Put your answer below -------------------------
 
+var reverseStr = function(str) {
+  return str.split("").reverse().join("");
+};
+
+console.log(reverseStr('redrum'));
 
 // -----------------------------------------------
 
