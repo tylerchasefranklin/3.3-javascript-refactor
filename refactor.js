@@ -94,8 +94,10 @@ console.log("The letter is", letter);
 
 // Put your answer below -------------------------
 
-//
-
+// x will not be logged at all because it was set to equal y in the anonymous function
+// and z in the the second argument of setTimeout.  z will get logged first because
+// it is the second argument of setTimeout and does not technically have time set so
+// it will run immediately, whereas y will run after 1 millisecond.
 // -----------------------------------------------
 
 //////////////////////////////////////////////////
