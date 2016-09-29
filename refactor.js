@@ -300,14 +300,32 @@ var twoPlusTwo = addNumbers(2,2);
 // Then refactor the function to have a default
 // amount of 1 if no param is given.
 
-var speed = 0;
+//var speed = 0;
 
-var accelerate = function(amount) {
-  speed += amount;
-};
+//var accelerate = function(amount) {
+  //speed += amount;
+//};
+
+//console.log(accelerate());
 
 // Put your answer below -------------------------
 
+// I actually cannot get the function to return "NaN", it always comes back "undefined"
+// for me.  I would assume that this is because speed is set to "0" which is pretty much
+// an undefined value.  If you run any kind of math function with an undefined value
+// it is going to return nothing because the program doesn't know what to use in the function.
+
+var speed = 0;
+
+var accelerate = function(amount) {
+  if(amount === 0) {
+    speed += 1;
+  }else {
+    amount += speed;
+  } return ;
+}; // I could not figure out how to get this to work :(
+
+console.log(accelerate());
 
 // -----------------------------------------------
 
